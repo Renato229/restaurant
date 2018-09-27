@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>The Captain's Diner</h1>
+		</header>
+
+		<nav>
+		<hr />
+			<a href="home.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contacts.html">Contact Us</a>
+		<hr />
+		</nav>
+
+		<form action="submit.html" method="POST">
+
+			<label for="Name">Name:</label>
+			<input type="text" id="Name" name="name"><br />
+
+			<label for="Email">Email:</label>
+			<input type="text" id="Email" name="Email"><br />
+
+			<label for="Phone">Phone:</label>
+			<input type="text" id="Phone" name="Phone"><br />
+
+
+				<label for="contact">Reason for Inquiry:</label>
+				<select id="contact" name="contact">
+					<option value="default" selected>Catering</option>
+					<option value="private">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select><br />
+
+			<label for="info">Additional Information:</label>
+			<textarea id="info" name="info"></textarea><br />
+
+				Have you been to the restaurant?
+				<input type="radio" id="choice1" name="questionaire" value="No" checked>
+				<label for="choice1">No</label>
+
+				<input type="radio" id="choice2" name="questionaire" value="Yes">
+				<label for="choice2">Yes</label>
+				<br />
+
+			Best days to contact you:
+			<input type="checkbox" id="monday" name="interest" value="monday">
+			<label for="monday">M</label>
+
+			<input type="checkbox" id="tuesday" name="interest" value="tuesday">
+			<label for="monday">T</label>
+
+			<input type="checkbox" id="wednesday" name="interest" value="wednesday">
+			<label for="monday">W</label>
+
+			<input type="checkbox" id="thursday" name="interest" value="thursday">
+			<label for="monday">Th</label>
+
+			<input type="checkbox" id="friday" name="interest" value="friday">
+			<label for="monday">F</label>
+			<br />
+
+				<input type="submit" name="submit" value="Send Request">
+	</form>
+
+		<footer>
+				<hr />
+				<p>500 S. Tryon St,Charlotte,NC,28217</p>
+				<p>704-225-4199</p>
+		</footer>
+</body>
+</html>
