@@ -1,76 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Contacts</title>
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+	<style>
+label{
+	float: left;
+	width: 550px;
+	text-align: right;
+	padding-right: 14px;
+	margin-top: 14px;
+	clear: both;
+}
+		input, textarea, select{
+			margin-top: 16px;
+		}
+		#thesubmit{
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.required{
+			font-weight: bold;
+		}
+		
+	</style>
+
 </head>
 <body>
-	<main>
 		<header>
 			<h1>The Captain's Diner</h1>
 		</header>
 
 		<nav>
-		<hr />
 			<a href="home.html">Home</a>
 			<a href="menu.html">Menu</a>
 			<a href="contacts.html">Contact Us</a>
-		<hr />
 		</nav>
-
+		
+		<section class="content">
 		<form action="submit.html" method="POST">
+			
+		<div class="container">
+			<div class="required">
+				<label for="Name">Name:</label>
+				<input type="text" id="name" name="name">
+			</div>
 
-			<label for="Name">Name:</label>
-			<input type="text" id="Name" name="name"><br />
+			<div class="required">
+				<label for="Email">Email:</label>
+				<input type="text" id="Email" name="Email">
+			</div>
 
-			<label for="Email">Email:</label>
-			<input type="text" id="Email" name="Email"><br />
+			<div class="required">
+				<label for="Phone">Phone:</label>
+				<input type="text" id="Phone" name="Phone">
+			</div>
 
-			<label for="Phone">Phone:</label>
-			<input type="text" id="Phone" name="Phone"><br />
-
-
+			<div class="required">
 				<label for="contact">Reason for Inquiry:</label>
-				<select id="contact" name="contact">
-					<option value="default" selected>Catering</option>
-					<option value="private">Private Party</option>
-					<option value="feedback">Feedback</option>
-					<option value="other">Other</option>
-				</select><br />
-
-			<label for="info">Additional Information:</label>
-			<textarea id="info" name="info"></textarea><br />
-
-				Have you been to the restaurant?
-				<input type="radio" id="choice1" name="questionaire" value="No" checked>
-				<label for="choice1">No</label>
-
-				<input type="radio" id="choice2" name="questionaire" value="Yes">
-				<label for="choice2">Yes</label>
-				<br />
-
-			Best days to contact you:
-			<input type="checkbox" id="monday" name="interest" value="monday">
-			<label for="monday">M</label>
-
-			<input type="checkbox" id="tuesday" name="interest" value="tuesday">
-			<label for="monday">T</label>
-
-			<input type="checkbox" id="wednesday" name="interest" value="wednesday">
-			<label for="monday">W</label>
-
-			<input type="checkbox" id="thursday" name="interest" value="thursday">
-			<label for="monday">Th</label>
-
-			<input type="checkbox" id="friday" name="interest" value="friday">
-			<label for="monday">F</label>
+					<select id="contact" name="contact" style="width: 161px;">
+						<option value="default" selected>Catering</option>
+						<option value="private">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select>
+			</div>
+			
+			<div>
+				<label for="info">Additional Information:</label>
+					<textarea cols="20" rows="10" info" name="info"></textarea>
+			</div>
+		
+			<div class="required">
+				<label for="restaurant">Have you been to the restaurant?</label></div>
+					<input type="radio" id="choice1" name="questionaire" value="No" checked>No
+					<input type="radio" id="choice2" name="questionaire" value="Yes">Yes
 			<br />
 
-				<input type="submit" name="submit" value="Send Request">
-	</form>
+			<div class="required">
+				<label for="Best days">Best days to contact you:</label></div>
+					<input type="checkbox" id="monday" name="interest" value="monday"> M
+					<input type="checkbox" id="tuesday" name="interest" value="tuesday"> T
+					<input type="checkbox" id="wednesday" name="interest" value="wednesday"> W
+					<input type="checkbox" id="thursday" name="interest" value="thursday"> Th
+					<input type="checkbox" id="friday" name="interest" value="friday"> F
+			<br />
 
+			<div id="thesubmit">
+					<button type="submit" name="submit" style="height: 30px; width: 120px; border-radius: 10px; background-color: white;">Send Request</button>
+			</div>
+			
+	</form>
+</section>
 		<footer>
-				<hr />
-				<p>500 S. Tryon St,Charlotte,NC,28217</p>
+				<p>500 S. Tryon St, Charlotte, NC, 28217</p>
 				<p>704-225-4199</p>
 		</footer>
 </body>
